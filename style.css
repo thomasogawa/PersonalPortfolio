@@ -21,24 +21,27 @@ h1{
 h2{
     font-size: 2em;
     background-color: var(--main-color);
-    padding: var(--spacing-large);
+    padding: var(--spacing-small);
+    border-radius: 10px;
 }
 
 h3{
     font-size: 1.5em;
     background-color: var(--secondary-color);
-    padding: var(--spacing-medium);
+    padding: var(--spacing-small);
+    border-radius: 10px;
 }   
 
 h4{
     font-size: 1.2em;
     background-color: var(--tertiary-color);
     padding: var(--spacing-small);
+    border-radius: 10px;
 }    
 
 h5{
     font-size: 1em;
-    background-color: var(--fourth-color);
+    padding-left: var(--spacing-small);
 }   
 
 h6{
@@ -47,19 +50,10 @@ h6{
 
 p{
     font-size: 1em;
+    padding-left: var(--spacing-large);
 }
 
-img {
-    width: 20%;
-    height: auto;
-    border: 2px solid var(--main-color);
-    box-sizing: border-box; 
-}
 
-/*Image variation*/
-img.rounded{
-    border-radius: 75%;
-}
 
 
 button{
@@ -79,7 +73,7 @@ button.disabled{
     cursor: not-allowed;
 }
 
-button.succes{
+button.success{
     background-color: var(--secondary-color);
     color: white;
 }
@@ -91,7 +85,7 @@ button.error{
 
 /*For links*/
 a{
-    color: var(--main-color);
+    color: var(--fourth-color);
 }
 
 /*Text inputs*/
@@ -116,13 +110,37 @@ input[type="text"]{
     padding: 20px;
 }
 
+.AboutMeContainer{
+    align-items: top;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: var(--main-color);
+    padding: var(--spacing-large);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--main-color);
+    box-sizing: border-box; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 800px;
+}
+
+/*Image variation*/
+img.rounded{
+    border-radius: 75%;
+}
+
 /* CSS Variables for a default color pallete*/
 :root{
-    --main-color: #334d4f;
-    --secondary-color: rgb(90, 125, 123);
-    --tertiary-color: 	#84a998;
-    --fourth-color: #a9b096;
-    --fifth-color: #d6c6a9;
+    --main-color: #90c4f1;
+    --secondary-color: #98e4de;
+    --tertiary-color: 	#70dbb7;
+    --fourth-color: #ff7f69;
+    --fifth-color: #faecd7;
 }
 
 nav {
@@ -154,20 +172,16 @@ li a:hover{
 }
 
 .HomePage{
-    min-height: 100vh;
+    min-height: 100px;
     align-items: center;
     justify-content: center;
-    display: flex;
+    /* display: flex; */
 }
+
 
 .NameText{
     font-size: 3rem;
     color: var(--main-color);
-}
-
-.MajorText{
-    font-size: 2rem;
-    color: var(--secondary-color);
 }
 
 .Footer{
@@ -195,11 +209,7 @@ li a:hover{
     margin-left: 20px;
 }
 
-.AboutMeContainer{
-    align-items: top;
-    margin-left: 40px;
 
-}
 /* CSS Variables for small, medium, and large spacing */
 :root{
     --spacing-small: 10px;
