@@ -114,12 +114,13 @@ input[type="text"]{
 .IntroContainer{
     display: flex;
     margin: 0 auto;
-    padding: 20px;
+    align-items: center;
     justify-content: center;
+    height: 100vh;
+    background-color: var();
 }
 
 .AboutMeContainer{
-    align-items: top;
     margin-left: 40px;
     margin-right: 40px;
     background-color: var(--main-color);
@@ -129,6 +130,21 @@ input[type="text"]{
     max-width: 800px;
 }
 
+/*For down arrow on landing page*/
+#down{
+    position: absolute;
+    top: 85vh;
+    font-size: 2.5em;
+    color: var(--main-color);
+}
+
+#down:hover{
+    cursor: pointer;
+    color: var(--fourth-color);
+    opacity: 0.8;
+}
+
+/*For profile picture*/
 img {
     width: 100%;
     max-width: 250px;

@@ -31,5 +31,6 @@ Include screenshots or GIFs showcasing the portfolio.
 ## Contact
 Provide contact information or links to social profiles.
 
-## License
-Specify the license under which the project is distributed.
+## References
+[Specify the license under which the project is distributed.](https://medium.com/@rohit_dalal/full-screen-responsive-landing-page-with-html-css-jquery-e4e59c340236)
+
